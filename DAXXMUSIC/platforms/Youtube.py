@@ -26,7 +26,7 @@ async def shell_cmd(cmd):
     return out.decode("utf-8")
 
 
-cookies_file = "assets/cookies.txt"
+cookies_file = "cookies/cookies.txt"
 
 class YouTubeAPI:
     def __init__(self):
@@ -310,7 +310,7 @@ class YouTubeAPI:
                     {
                         "key": "FFmpegExtractAudio",
                         "preferredcodec": "mp3",
-                        "preferredquality": "192",
+                        "preferredquality": "320",
                     }
                 ],
                 "cookiefile": cookies_file,  # Add cookie file option here
